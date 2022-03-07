@@ -1,0 +1,22 @@
+h3 {
+    font-family: 'Smooch Sans', sans-serif;
+    font-size: 35px;
+}
+#grid {
+    width: 900px;
+    height: 700px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+img {
+    box-sizing: border-box;
+    border-width: 3px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 5%;
+    width: 200px;
+    height: 200px;
+}
