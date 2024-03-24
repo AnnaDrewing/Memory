@@ -2,6 +2,7 @@ h3 {
     font-family: 'Smooch Sans', sans-serif;
     font-size: 35px;
 }
+
 #grid {
     width: 900px;
     height: 700px;
@@ -13,9 +14,9 @@ h3 {
 
 img {
     box-sizing: border-box;
-    border-width: 3px;
+    border-width: 5px;
     border-style: solid;
-    border-color: black;
+    border-color: #1d462f;
     border-radius: 5%;
     width: 200px;
     height: 200px;
