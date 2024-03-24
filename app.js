@@ -57,10 +57,10 @@ let cardsChosenIds = [];
 const cardsWon = [];
 
 function createBoard() {
-    let idNumber = 0; 
+    let idNumber = 0;
     cardArray.forEach(element => {
         const card = document.createElement('img'); //creates an HTML element <img> 
-        card.setAttribute('src', 'images/back.png'); //adds the src attribute and fillts it with 'images/...'
+        card.setAttribute('src', 'images/back-dino.png'); //adds the src attribute and fillts it with 'images/...'
         card.setAttribute('data-id', idNumber);
         idNumber++;
         gridDisplay.append(card); //adds the card element to the grid <div> 
@@ -85,18 +85,18 @@ function checkMatch() {
     const secondChoiceId = cardsChosenIds[1];
     if (firstChoiceId == secondChoiceId) {
         alert('You have clicked the same image!');
-        cards[firstChoiceId].setAttribute('src', 'images/back.png');
-        cards[secondChoiceId].setAttribute('src', 'images/back.png');
+        cards[firstChoiceId].setAttribute('src', 'images/back-dino.png');
+        cards[secondChoiceId].setAttribute('src', 'images/back-dino.png');
     }
     if (cardsChosen[0] == cardsChosen[1]) {
         cards[firstChoiceId].setAttribute('src', 'images/done.png');
         cards[secondChoiceId].setAttribute('src', 'images/done.png');
-        cards[firstChoiceId].removeEventListener('click',flipCard); //stops listening for clicks
-        cards[secondChoiceId].removeEventListener('click',flipCard); //stops listening for clicks
+        cards[firstChoiceId].removeEventListener('click', flipCard); //stops listening for clicks
+        cards[secondChoiceId].removeEventListener('click', flipCard); //stops listening for clicks
         cardsWon.push(cardsChosen);
     } else {
-        cards[firstChoiceId].setAttribute('src', 'images/back.png');
-        cards[secondChoiceId].setAttribute('src', 'images/back.png');
+        cards[firstChoiceId].setAttribute('src', 'images/back-dino.png');
+        cards[secondChoiceId].setAttribute('src', 'images/back-dino.png');
     }
     resultDisplay.textContent = cardsWon.length;
     cardsChosen = [];
